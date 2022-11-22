@@ -1,0 +1,21 @@
+{
+  "name": "red-spider-lily",
+  "displayName": "red-spider-lily",
+  "description": "red dark theme",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.73.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Red Spider Lily",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Red Spider Lily-color-theme.json"
+      }
+    ]
+  }
+}
