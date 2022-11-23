@@ -16,8 +16,8 @@
       "scope": [
         "comment",
         "comment.block",
-        "comment.line",
-        "comment.block.documentation"
+        "comment.block.documentation",
+        "comment.line"
       ],
       "settings": {
         "fontStyle": "italic",
