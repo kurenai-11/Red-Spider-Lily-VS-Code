@@ -232,7 +232,10 @@
     },
     {
       "name": "Sections",
-      "scope": "entity.name.section",
+      "scope": [
+        "entity.name.section",
+        "punctuation.definition.heading.markdown"
+      ],
       "settings": {
         "foreground": "#e11b32",
         "fontStyle": "bold"
