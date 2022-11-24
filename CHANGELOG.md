@@ -14,3 +14,7 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 ## [0.1.2]
 
 - more selection brush ups, looks a lot better now with any selection
+
+## [0.1.3]
+
+- slight word highlight fix
