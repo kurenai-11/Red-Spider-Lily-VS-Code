@@ -1,18 +1,21 @@
 {
   "name": "Red Spider Lily",
   "colors": {
+    // Main editor section
     "editor.background": "#181818",
     "editor.foreground": "#f0f0d8",
+    "editorCursor.foreground": "#f0f0d8",
+    "activityBar.background": "#181818",
+    "activityBarBadge.background": "#e11b32",
+    "statusBar.background": "#181818",
+    // Word highlight section
     "editor.selectionBackground": "#b11628",
     "editor.selectionHighlightBackground": "#534c4c7e",
     "editor.findMatchBackground": "#b11628",
     "editor.findMatchHighlightBackground": "#72202086",
     "editor.wordHighlightBackground": "#72202086",
     "editor.wordHighlightStrongBackground": "#72202086",
-    "editorCursor.foreground": "#f0f0d8",
-    "activityBar.background": "#181818",
-    "activityBarBadge.background": "#e11b32",
-    "statusBar.background": "#181818"
+    "editor.hoverHighlightBackground": "#534c4c7e"
   },
   "tokenColors": [
     {
