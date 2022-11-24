@@ -18,3 +18,7 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 ## [0.1.3]
 
 - slight word highlight fix
+
+## [0.2.0]
+
+- done main interface coloring
