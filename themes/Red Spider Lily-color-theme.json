@@ -1,11 +1,8 @@
 {
   "name": "Red Spider Lily",
   "colors": {
-    // primary background color
     "editor.background": "#181818",
-    // primary text color:
     "editor.foreground": "#f0f0d8",
-    // also primary red color
     "activityBar.background": "#181818",
     "activityBarBadge.background": "#e11b32",
     "statusBar.background": "#181818"
