@@ -6,3 +6,7 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 
 - Initial release.
 - Chose main colors for the syntax highlighting and general direction of where the theme is going to.
+
+## [0.1.1]
+
+- added cutsom word highlighting
