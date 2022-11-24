@@ -45,7 +45,7 @@
     "input.placeholderForeground": "#bbbba9",
     "inputValidation.errorBackground": "#b11628",
     "inputValidation.errorForeground": "#f0f0d8",
-    "quickInputList.focusBackground": "#e11b32",
+    "quickInputList.focusBackground": "#b11628",
     "editorSuggestWidget.background": "#181818",
     "quickInput.background": "#181818",
     "scrollbar.shadow": "#e11b326e",
@@ -61,7 +61,7 @@
     "list.hoverBackground": "#413d3d",
     "list.focusHighlightForeground": "#f0f0d8",
     "list.highlightForeground": "#b11628",
-    "list.errorForeground": "#413d3d",
+    "list.errorForeground": "#b11628",
     "list.inactiveFocusBackground": "#242424",
     "list.focusBackground": "#7e101d",
     "tab.activeBackground": "#413d3d",
@@ -165,8 +165,15 @@
       }
     },
     {
+      "name": "Keyword unit",
+      "scope": "keyword.other.unit",
+      "settings": {
+        "foreground": "#c0a8a8"
+      }
+    },
+    {
       "name": "Functions",
-      "scope": "entity.name.function",
+      "scope": ["entity.name.function", "support.function"],
       "settings": {
         "foreground": "#d8c0a8",
         "fontStyle": "italic"
@@ -174,7 +181,7 @@
     },
     {
       "name": "Types",
-      "scope": "entity.name.type",
+      "scope": ["entity.name.type", "support.type"],
       "settings": {
         "foreground": "#c0a8a8"
       }
@@ -182,6 +189,22 @@
     {
       "name": "Storage type(let, const)",
       "scope": "storage.type",
+      "settings": {
+        "foreground": "#e11b32",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Property  value",
+      "scope": "support.constant.property-value",
+      "settings": {
+        "foreground": "#e11b32",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Font names",
+      "scope": "support.constant.font-name",
       "settings": {
         "foreground": "#e11b32",
         "fontStyle": "italic"
@@ -230,6 +253,13 @@
       "scope": "entity.other",
       "settings": {
         "foreground": "#d8c0a8"
+      }
+    },
+    {
+      "name": "Attribute name",
+      "scope": "entity.other.attribute-name",
+      "settings": {
+        "foreground": "#e11b32"
       }
     }
   ]
