@@ -124,8 +124,8 @@
     "listFilterWidget.background": "#00ff2a",
     "list.filterMatchBackground": "#00ff2a",
     "inputValidation.infoBackground": "#00ff2a",
-    "checkbox.background": "#00ff2a",
-    "button.secondaryBackground": "#00ff2a"
+    "checkbox.background": "#7e101d",
+    "button.secondaryBackground": "#e11b32"
   },
   "tokenColors": [
     {
@@ -157,8 +157,8 @@
       }
     },
     {
-      "name": "This keyword",
-      "scope": "variable.language.this",
+      "name": "This and self keywords",
+      "scope": ["variable.language.this", "variable.language.special.self"],
       "settings": {
         "foreground": "#e11b32",
         "fontStyle": "italic"
@@ -173,7 +173,11 @@
     },
     {
       "name": "Functions",
-      "scope": ["entity.name.function", "support.function"],
+      "scope": [
+        "entity.name.function",
+        "support.function",
+        "meta.function-call.generic"
+      ],
       "settings": {
         "foreground": "#d8c0a8",
         "fontStyle": "italic"
@@ -216,6 +220,22 @@
       "settings": {
         "foreground": "#e11b32",
         "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Keyword other",
+      "scope": "keyword.other",
+      "settings": {
+        "foreground": "#e11b32",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Sections",
+      "scope": "entity.name.section",
+      "settings": {
+        "foreground": "#e11b32",
+        "fontStyle": "bold"
       }
     },
     {

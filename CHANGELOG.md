@@ -30,3 +30,7 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 ## [0.2.2]
 
 - slight fix again
+
+## [0.2.3]
+
+- added more keyword highlight
