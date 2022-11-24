@@ -9,5 +9,6 @@ Creating from scratch so there may be some bugs.
 
 ## Installing
 
-#$ vsce package
+$ vsce package
+<br/>
 Right click .vsix file in VS Code and choose "Install extension vsix".
