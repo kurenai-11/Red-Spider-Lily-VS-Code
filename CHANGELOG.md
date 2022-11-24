@@ -26,3 +26,7 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 ## [0.2.1]
 
 - slight fix
+
+## [0.2.2]
+
+- slight fix again
