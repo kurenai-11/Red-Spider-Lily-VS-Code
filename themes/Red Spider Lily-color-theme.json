@@ -157,8 +157,12 @@
       }
     },
     {
-      "name": "This and self keywords",
-      "scope": ["variable.language.this", "variable.language.special.self"],
+      "name": "This, self, null keywords",
+      "scope": [
+        "variable.language.this",
+        "variable.language.special.self",
+        "constant.language.null"
+      ],
       "settings": {
         "foreground": "#e11b32",
         "fontStyle": "italic"

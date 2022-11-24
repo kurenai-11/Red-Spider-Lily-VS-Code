@@ -38,3 +38,7 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 ## [0.2.4]
 
 - markdown fix
+
+## [0.2.5]
+
+- added null highlight
