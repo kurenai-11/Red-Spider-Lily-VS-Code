@@ -3,6 +3,13 @@
   "colors": {
     "editor.background": "#181818",
     "editor.foreground": "#f0f0d8",
+    "editor.selectionBackground": "#b11628",
+    "editor.selectionHighlightBackground": "#72202086",
+    "editor.findMatchBackground": "#b11628",
+    "editor.findMatchHighlightBackground": "#72202086",
+    "editor.wordHighlightBackground": "#72252583",
+    "editor.wordHighlightStrongBackground": "#cc132979",
+    "editorCursor.foreground": "#f0f0d8",
     "activityBar.background": "#181818",
     "activityBarBadge.background": "#e11b32",
     "statusBar.background": "#181818"
@@ -81,6 +88,13 @@
       "settings": {
         "foreground": "#906060",
         "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Json string left part",
+      "scope": "support.type.property-name.json",
+      "settings": {
+        "foreground": "#f0f0d8"
       }
     },
     {
