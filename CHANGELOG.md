@@ -9,7 +9,7 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 
 ## [0.1.1]
 
-- added cutsom word highlighting
+- added custom word highlighting
 
 ## [0.1.2]
 
