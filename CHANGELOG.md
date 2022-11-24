@@ -22,3 +22,7 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 ## [0.2.0]
 
 - done main interface coloring
+
+## [0.2.1]
+
+- slight fix

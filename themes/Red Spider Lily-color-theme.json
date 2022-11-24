@@ -28,7 +28,7 @@
     "selection.background": "#b11628",
     "button.background": "#b11628",
     "button.foreground": "#f0f0d8",
-    "icon.foreground": "#b11628",
+    "icon.foreground": "#f0f0d8",
     "focusBorder": "#b11628",
     "foreground": "#f0f0d8",
     "errorForeground": "#b11628",
