@@ -1,8 +1,8 @@
 {
   "name": "red-spider-lily",
-  "displayName": "red-spider-lily",
-  "description": "red dark theme",
-  "version": "0.0.1",
+  "displayName": "Red Spider Lily",
+  "description": "A theme inspired by the red spider lily flower. It is being made from scratch so there may be a lot of bugs and unsupported languages. Alpha version.",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.73.0"
   },
@@ -12,7 +12,7 @@
   "contributes": {
     "themes": [
       {
-        "label": "Red Spider Lily",
+        "label": "Red Spider Lily Dark",
         "uiTheme": "vs-dark",
         "path": "./themes/Red Spider Lily-color-theme.json"
       }

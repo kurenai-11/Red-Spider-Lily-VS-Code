@@ -2,17 +2,17 @@
   "name": "Red Spider Lily",
   "colors": {
     // primary background color
-    "editor.background": "#0f0f0f",
+    "editor.background": "#181818",
     // primary text color:
-    "editor.foreground": "#ffffff",
+    "editor.foreground": "#f0f0d8",
     // also primary red color
-    "activityBar.background": "#0f0f0f",
-    "activityBarBadge.background": "#d41717",
-    "statusBar.background": "#0f0f0f"
+    "activityBar.background": "#181818",
+    "activityBarBadge.background": "#e11b32",
+    "statusBar.background": "#181818"
   },
   "tokenColors": [
     {
-      "name": "Comment",
+      "name": "Comments",
       "scope": [
         "comment",
         "comment.block",
@@ -21,14 +21,91 @@
       ],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#4b4646"
+        "foreground": "#484848"
       }
     },
     {
       "name": "Variables",
       "scope": ["variable"],
       "settings": {
-        "foreground": "#ffffff"
+        "foreground": "#f0f0d8"
+      }
+    },
+    {
+      "name": "Variables as parameters",
+      "scope": "variable.parameter",
+      "settings": {
+        "foreground": "#e11b32",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "This keyword",
+      "scope": "variable.language.this",
+      "settings": {
+        "foreground": "#e11b32",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Functions",
+      "scope": "entity.name.function",
+      "settings": {
+        "foreground": "#d8c0a8",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Types",
+      "scope": "entity.name.type",
+      "settings": {
+        "foreground": "#c0a8a8"
+      }
+    },
+    {
+      "name": "Storage type(let, const)",
+      "scope": "storage.type",
+      "settings": {
+        "foreground": "#e11b32",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Keyword control",
+      "scope": "keyword.control",
+      "settings": {
+        "foreground": "#e11b32",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Strings",
+      "scope": "string",
+      "settings": {
+        "foreground": "#906060",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Assignment",
+      "scope": "keyword.operator.assignment",
+      "settings": {
+        "foreground": "#f0f0d8",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Tags",
+      "scope": "entity.name.tag",
+      "settings": {
+        "foreground": "#e11b32"
+      }
+    },
+    {
+      "name": "Other entities",
+      "scope": "entity.other",
+      "settings": {
+        "foreground": "#d8c0a8"
       }
     }
   ]
