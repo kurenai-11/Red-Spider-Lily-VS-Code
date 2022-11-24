@@ -61,6 +61,9 @@
     "list.hoverBackground": "#413d3d",
     "list.focusHighlightForeground": "#f0f0d8",
     "list.highlightForeground": "#b11628",
+    "list.errorForeground": "#413d3d",
+    "list.inactiveFocusBackground": "#242424",
+    "list.focusBackground": "#7e101d",
     "tab.activeBackground": "#413d3d",
     "tab.activeForeground": "#f0f0d8",
     "tab.inactiveBackground": "#1b1919",
@@ -120,9 +123,6 @@
     // where is this? section
     "listFilterWidget.background": "#00ff2a",
     "list.filterMatchBackground": "#00ff2a",
-    "list.errorForeground": "#00ff2a",
-    "list.inactiveFocusBackground": "#00ff2a",
-    "list.focusBackground": "#00ff2a",
     "inputValidation.infoBackground": "#00ff2a",
     "checkbox.background": "#00ff2a",
     "button.secondaryBackground": "#00ff2a"
