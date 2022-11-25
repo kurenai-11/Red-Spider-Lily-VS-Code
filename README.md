@@ -14,3 +14,7 @@ If you find any, you are free to open a new issue. Provide a code sample or a wa
 ## Installing
 
 https://marketplace.visualstudio.com/items?itemName=kurenai-11.red-spider-lily
+
+## Credits
+
+Icon created by 58pic from pngtree.com
