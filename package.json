@@ -11,6 +11,7 @@
     "name": "kurenai-11",
     "url": "https://github.com/kurenai-11"
   },
+  "publisher": "kurenai-11",
   "engines": {
     "vscode": "^1.73.0"
   },
