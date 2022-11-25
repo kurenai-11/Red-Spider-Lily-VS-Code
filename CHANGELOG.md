@@ -55,3 +55,7 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 
 - added a test folder with code samples from different languages(took from vscode.dev testing playground)
 - added better support for all said languages
+
+## [0.2.9]
+
+- added global keyword highlight. Made the decision to also highlight operators because why not(+, -, \* etc.)
