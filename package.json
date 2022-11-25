@@ -12,7 +12,7 @@
     "url": "https://github.com/kurenai-11"
   },
   "publisher": "kurenai-11",
-  "icon": "./iconsm.png",
+  "icon": "iconsm.png",
   "engines": {
     "vscode": "^1.73.0"
   },
