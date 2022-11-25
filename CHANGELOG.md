@@ -42,3 +42,7 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 ## [0.2.5]
 
 - added null highlight
+
+## [0.2.6]
+
+- new theme image and overall publish version
