@@ -50,3 +50,8 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 ## [0.2.7]
 
 - added an extension icon so it looks prettier in the marketplace
+
+## [0.2.8]
+
+- added a test folder with code samples from different languages(took from vscode.dev testing playground)
+- added better support for all said languages

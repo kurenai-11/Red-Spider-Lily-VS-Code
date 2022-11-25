@@ -203,6 +203,14 @@
       }
     },
     {
+      "name": "Storage modifier(public)",
+      "scope": "storage.modifier",
+      "settings": {
+        "foreground": "#e11b32",
+        "fontStyle": "italic"
+      }
+    },
+    {
       "name": "Property  value",
       "scope": "support.constant.property-value",
       "settings": {
@@ -235,6 +243,15 @@
       }
     },
     {
+      "name": "Keyword type",
+      "scope": "keyword.type",
+      "settings": {
+        "foreground": "#e11b32",
+        "fontStyle": "italic"
+      }
+    },
+    // Markdown
+    {
       "name": "Sections",
       "scope": [
         "entity.name.section",
@@ -243,6 +260,34 @@
       "settings": {
         "foreground": "#e11b32",
         "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Italic",
+      "scope": "markup.italic",
+      "settings": {
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Bold",
+      "scope": "markup.bold",
+      "settings": {
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Strikethrough",
+      "scope": "markup.strikethrough",
+      "settings": {
+        "fontStyle": "strikethrough"
+      }
+    },
+    {
+      "name": "Quote",
+      "scope": "markup.quote",
+      "settings": {
+        "fontStyle": "italic"
       }
     },
     {
