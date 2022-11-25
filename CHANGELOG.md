@@ -46,3 +46,7 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 ## [0.2.6]
 
 - new theme image and overall publish version
+
+## [0.2.7]
+
+- added an extension icon so it looks prettier in the marketplace

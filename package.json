@@ -2,7 +2,7 @@
   "name": "red-spider-lily",
   "displayName": "Red Spider Lily",
   "description": "A theme inspired by the red spider lily flower. It is being made from scratch so there may be a lot of bugs and unsupported languages. Alpha version.",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "repository": {
     "url": "https://github.com/kurenai-11/Red-Spider-Lily-VS-Code"
   },
@@ -12,6 +12,7 @@
     "url": "https://github.com/kurenai-11"
   },
   "publisher": "kurenai-11",
+  "icon": "./iconsm.png",
   "engines": {
     "vscode": "^1.73.0"
   },
