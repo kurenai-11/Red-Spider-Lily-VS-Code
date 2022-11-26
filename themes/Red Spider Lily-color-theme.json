@@ -317,7 +317,7 @@
       "name": "Assignment",
       "scope": "keyword.operator.assignment",
       "settings": {
-        "foreground": "#f0f0d8",
+        "foreground": "#e11b32",
         "fontStyle": "italic"
       }
     },

@@ -59,3 +59,7 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 ## [0.2.9]
 
 - added global keyword highlight. Made the decision to also highlight operators because why not(+, -, \* etc.)
+
+## [0.3.0]
+
+- if we are globally highlighting all operators, I guess assignment should also be highlighted.
