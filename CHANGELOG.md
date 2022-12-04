@@ -71,3 +71,7 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 ## [0.3.2]
 
 - introduced a light version of the theme. Lazy implementation.
+
+## [0.3.3]
+
+- tab color fix for light version
