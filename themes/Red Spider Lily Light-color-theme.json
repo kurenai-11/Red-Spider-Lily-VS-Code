@@ -48,6 +48,8 @@
     "input.placeholderForeground": "#3b3b36",
     "inputValidation.errorBackground": "#b11628",
     "inputValidation.errorForeground": "#242421",
+    "inputValidation.infoBackground": "#dadada",
+    "inputValidation.infoBorder": "#e11b32",
     "quickInputList.focusBackground": "#b11628",
     "editorSuggestWidget.background": "#dadada",
     "quickInput.background": "#dadada",
@@ -127,8 +129,7 @@
     "symbolIcon.unitForeground": "#242421",
     // where is this? section
     "listFilterWidget.background": "#00ff2a",
-    "list.filterMatchBackground": "#00ff2a",
-    "inputValidation.infoBackground": "#00ff2a"
+    "list.filterMatchBackground": "#00ff2a"
   },
   "tokenColors": [
     {
@@ -320,7 +321,8 @@
       "name": "Keyword operator",
       "scope": "keyword.operator",
       "settings": {
-        "foreground": "#e11b32"
+        "foreground": "#e11b32",
+        "fontStyle": ""
       }
     },
     {
