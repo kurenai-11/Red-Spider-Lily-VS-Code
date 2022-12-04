@@ -78,6 +78,8 @@
     "terminal.ansiBrightBlue": "#e11b32",
     "toolbar.activeBackground": "#b11628",
     "editorGroupHeader.tabsBackground": "#181818",
+    "checkbox.background": "#7e101d",
+    "button.secondaryBackground": "#e11b32",
     // Word highlight section
     "editor.selectionBackground": "#b11628",
     "editor.selectionHighlightBackground": "#534c4c7e",
@@ -123,9 +125,7 @@
     // where is this? section
     "listFilterWidget.background": "#00ff2a",
     "list.filterMatchBackground": "#00ff2a",
-    "inputValidation.infoBackground": "#00ff2a",
-    "checkbox.background": "#7e101d",
-    "button.secondaryBackground": "#e11b32"
+    "inputValidation.infoBackground": "#00ff2a"
   },
   "tokenColors": [
     {
@@ -314,18 +314,18 @@
       }
     },
     {
-      "name": "Assignment",
-      "scope": "keyword.operator.assignment",
+      "name": "Keyword operator",
+      "scope": "keyword.operator",
       "settings": {
-        "foreground": "#e11b32",
-        "fontStyle": "italic"
+        "foreground": "#e11b32"
       }
     },
     {
       "name": "Tags",
       "scope": "entity.name.tag",
       "settings": {
-        "foreground": "#e11b32"
+        "foreground": "#e11b32",
+        "fontStyle": "italic"
       }
     },
     {
