@@ -2,7 +2,7 @@
   "name": "red-spider-lily",
   "displayName": "Red Spider Lily",
   "description": "A theme inspired by the red spider lily flower. It is being made from scratch so there may be a lot of bugs and unsupported languages. Alpha version.",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "repository": {
     "url": "https://github.com/kurenai-11/Red-Spider-Lily-VS-Code"
   },
@@ -24,7 +24,12 @@
       {
         "label": "Red Spider Lily Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/Red Spider Lily-color-theme.json"
+        "path": "./themes/Red Spider Lily Dark-color-theme.json"
+      },
+      {
+        "label": "Red Spider Lily Light",
+        "uiTheme": "vs",
+        "path": "./themes/Red Spider Lily Light-color-theme.json"
       }
     ]
   }

@@ -67,3 +67,7 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 ## [0.3.1]
 
 - more italics for html. Made operators not italic(because it looked bad).
+
+## [0.3.2]
+
+- introduced a light version of the theme. Lazy implementation.
