@@ -63,3 +63,7 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 ## [0.3.0]
 
 - if we are globally highlighting all operators, I guess assignment should also be highlighted.
+
+## [0.3.1]
+
+- more italics for html. Made operators not italic(because it looked bad).
