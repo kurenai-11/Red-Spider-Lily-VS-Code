@@ -79,3 +79,7 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 ## [0.3.4]
 
 - fixed what I wanted 0.3.1 to do, because it didn't work
+
+## [0.4.0]
+
+- added peek view styling
