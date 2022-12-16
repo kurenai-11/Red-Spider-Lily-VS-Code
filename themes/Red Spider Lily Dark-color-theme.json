@@ -55,6 +55,7 @@
     "peekView.border": "#b11628",
     "peekViewEditor.matchHighlightBackground": "#72202086",
     "peekViewResult.background": "#181818",
+    "peekViewResult.selectionBackground": "#313131",
     "peekViewTitle.background": "#313131",
     "scrollbar.shadow": "#e11b326e",
     "scrollbarSlider.activeBackground": "#7e7676",
