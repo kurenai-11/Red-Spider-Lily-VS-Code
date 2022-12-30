@@ -87,3 +87,7 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 ## [0.4.1]
 
 - another peek view small fix
+
+## [0.4.2]
+
+- added links styling
