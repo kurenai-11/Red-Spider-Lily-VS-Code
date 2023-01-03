@@ -77,8 +77,10 @@
     "list.focusHighlightForeground": "#242421",
     "list.highlightForeground": "#b11628",
     "list.errorForeground": "#b11628",
-    "list.inactiveFocusBackground": "#242424",
+    "list.inactiveFocusBackground": "#c4c4c4",
     "list.focusBackground": "#7e101d",
+    "listFilterWidget.background": "#dadada",
+    "list.filterMatchBackground": "#b11628",
     "tab.activeBackground": "#dadada",
     "tab.activeForeground": "#242421",
     "tab.inactiveBackground": "#c4c4c4",
@@ -136,10 +138,7 @@
     "symbolIcon.structForeground": "#242421",
     "symbolIcon.textForeground": "#242421",
     "symbolIcon.typeParameterForeground": "#242421",
-    "symbolIcon.unitForeground": "#242421",
-    // where is this? section
-    "listFilterWidget.background": "#00ff2a",
-    "list.filterMatchBackground": "#00ff2a"
+    "symbolIcon.unitForeground": "#242421"
   },
   "tokenColors": [
     {

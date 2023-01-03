@@ -91,3 +91,7 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 ## [0.4.2]
 
 - added links styling
+
+## [0.4.3]
+
+- fixed list filter widget(finally found where it is)
