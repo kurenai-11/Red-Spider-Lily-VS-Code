@@ -1,0 +1,42 @@
+// This is your Prisma schema file,
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  User // A normal user
+  Moderator // A user that can moderate normal users
+  Admin // A user that can also moderate moderators
+}
+
+model Message {
+  id        Int      @id @default(autoincrement())
+  author    User     @relation(fields: [userId], references: [id])
+  userId    Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+  content   String   @db.VarChar(255)
+
+  @@index([createdAt, updatedAt])
+}
+
+model User {
+  id          Int       @id @default(autoincrement())
+  role        Role      @default(User)
+  createdAt   DateTime  @default(now())
+  username    String    @db.VarChar(64)
+  displayName String?   @db.VarChar(64)
+  banned      Boolean   @default(false)
+  bannedUntil DateTime  @default(now())
+  password    String    @db.VarChar(64)
+  messages    Message[]
+
+  @@unique([username])
+  @@index([createdAt])
+}

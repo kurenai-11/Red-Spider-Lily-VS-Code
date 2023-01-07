@@ -95,3 +95,7 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 ## [0.4.3]
 
 - fixed list filter widget(finally found where it is)
+
+## [0.4.4]
+
+- added prisma styling (a quick fix)

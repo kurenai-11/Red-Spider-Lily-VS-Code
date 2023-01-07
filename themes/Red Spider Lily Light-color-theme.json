@@ -162,6 +162,13 @@
       }
     },
     {
+      "name": "Variables in prisma",
+      "scope": ["variable.language.relations.prisma"],
+      "settings": {
+        "foreground": "#4d4343"
+      }
+    },
+    {
       "name": "Variables as parameters",
       "scope": "variable.parameter",
       "settings": {
