@@ -1,10 +1,15 @@
 # Red Spider Lily
 
-![](/theme.png)
+## Preview
+
+Dark:
+![](/theme1.png)
+Light:
+![](/theme2.png)
 
 ## About this theme
 
-As the name suggest, this theme is inspired by the red spider lily(flower).
+As the name suggest, this theme is inspired by the red spider lily(flower) and my chuunibyo heart.
 
 ## Bugs or inconsistencies
 

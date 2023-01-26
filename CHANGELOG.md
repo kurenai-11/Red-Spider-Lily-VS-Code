@@ -99,3 +99,7 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 ## [0.4.4]
 
 - added prisma styling (a quick fix)
+
+## [0.4.5]
+
+- updated readme and theme preview images (no actual changes inside)
