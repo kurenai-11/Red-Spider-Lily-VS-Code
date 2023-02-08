@@ -340,6 +340,16 @@
       }
     },
     {
+      "name": "Key-value separator",
+      "scope": [
+        "punctuation.separator.key-value",
+        "punctuation.separator.dictionary.key-value"
+      ],
+      "settings": {
+        "foreground": "#e11b32"
+      }
+    },
+    {
       "name": "Tags",
       "scope": "entity.name.tag",
       "settings": {
