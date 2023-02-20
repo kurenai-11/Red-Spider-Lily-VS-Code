@@ -107,3 +107,7 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 ## [0.4.6]
 
 - added highlight for the key-value pairs separator (:)
+
+## [0.4.7]
+
+- better syntax highlighting for escape and placeholder sequences (%v, \n)

@@ -237,6 +237,20 @@
       }
     },
     {
+      "name": "Escape sequence",
+      "scope": "constant.character.escape",
+      "settings": {
+        "foreground": "#c0a8a8"
+      }
+    },
+    {
+      "name": "Constant other placeholder",
+      "scope": "constant.other.placeholder",
+      "settings": {
+        "foreground": "#e11b32"
+      }
+    },
+    {
       "name": "Font names",
       "scope": "support.constant.font-name",
       "settings": {
