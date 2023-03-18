@@ -115,3 +115,7 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 ## [0.4.8]
 
 - added syntax highlighting for classes (support.class selector)
+
+## [0.4.9]
+
+- changed the theme description, no changes to the actual theme

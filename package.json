@@ -1,8 +1,8 @@
 {
   "name": "red-spider-lily",
   "displayName": "Red Spider Lily",
-  "description": "A theme inspired by the red spider lily flower. It is being made from scratch so there may be a lot of bugs and unsupported languages. Alpha version.",
-  "version": "0.4.8",
+  "description": "A theme inspired by the red spider lily flower. It was made from scratch but it should be pretty stable.",
+  "version": "0.4.9",
   "repository": {
     "url": "https://github.com/kurenai-11/Red-Spider-Lily-VS-Code"
   },
