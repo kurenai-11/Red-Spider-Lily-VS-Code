@@ -3,6 +3,10 @@
 # import complex math module
 import cmath
 
+class Solution:
+  def __init__(self):
+      print("hey")
+
 a = 1
 b = 5
 c = 6

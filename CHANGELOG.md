@@ -119,3 +119,7 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 ## [0.4.9]
 
 - changed the theme description, no changes to the actual theme
+
+## [0.5.0]
+
+- fixed class syntax highlighting from 0.4.8

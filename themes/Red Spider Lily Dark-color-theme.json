@@ -245,9 +245,9 @@
     },
     {
       "name": "Classes",
-      "scope": "support.class",
+      "scope": ["support.class", "entity.name.type.class"],
       "settings": {
-        "foreground": "#e11b32",
+        "foreground": "#c0a8a8",
         "fontStyle": "italic"
       }
     },

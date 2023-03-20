@@ -1,9 +1,10 @@
-package test
+package sks
+
+import "fmt"
 
 func main() {
-	var cfg config
-}
-
-struct config {
-	port int
+	var cfg struct {
+		port int
+	}
+	fmt.Println(cfg)
 }
