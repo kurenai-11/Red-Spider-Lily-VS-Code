@@ -260,6 +260,13 @@
       }
     },
     {
+      "name": "Template expressions",
+      "scope": "meta.template.expression",
+      "settings": {
+        "foreground": "#f0f0d8"
+      }
+    },
+    {
       "name": "Constant other placeholder",
       "scope": "constant.other.placeholder",
       "settings": {

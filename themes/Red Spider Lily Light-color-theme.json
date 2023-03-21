@@ -262,6 +262,13 @@
       }
     },
     {
+      "name": "Template expressions",
+      "scope": "meta.template.expression",
+      "settings": {
+        "foreground": "#242421"
+      }
+    },
+    {
       "name": "Constant other placeholder",
       "scope": "constant.other.placeholder",
       "settings": {
