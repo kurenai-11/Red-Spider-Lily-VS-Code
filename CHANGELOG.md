@@ -123,3 +123,7 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 ## [0.5.0]
 
 - fixed class syntax highlighting from 0.4.8
+
+## [0.5.1]
+
+- fixed component syntax highlighting

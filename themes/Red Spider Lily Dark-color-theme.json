@@ -252,6 +252,14 @@
       }
     },
     {
+      "name": "Components (react etc)",
+      "scope": "support.class.component",
+      "settings": {
+        "foreground": "#e11b32",
+        "fontStyle": "italic"
+      }
+    },
+    {
       "name": "Constant other placeholder",
       "scope": "constant.other.placeholder",
       "settings": {
