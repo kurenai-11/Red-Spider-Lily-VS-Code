@@ -131,3 +131,7 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 ## [0.5.2]
 
 - fixed template expression highlighting
+
+## [0.5.3]
+
+- another template expression fix

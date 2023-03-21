@@ -263,7 +263,8 @@
       "name": "Template expressions",
       "scope": "meta.template.expression",
       "settings": {
-        "foreground": "#f0f0d8"
+        "foreground": "#f0f0d8",
+        "fontStyle": ""
       }
     },
     {
