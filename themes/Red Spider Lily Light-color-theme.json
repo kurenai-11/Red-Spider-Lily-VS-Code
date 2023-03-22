@@ -262,8 +262,8 @@
       }
     },
     {
-      "name": "Template expressions",
-      "scope": "meta.template.expression",
+      "name": "Template and interpolated expressions",
+      "scope": ["meta.template.expression", "string.interpolated.expression"],
       "settings": {
         "foreground": "#242421",
         "fontStyle": ""
