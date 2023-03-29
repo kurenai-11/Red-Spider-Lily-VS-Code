@@ -139,3 +139,7 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 ## [0.5.4]
 
 - fixed interpolated expression highlighting
+
+## [0.5.5]
+
+- added character entities highlighting inside strings (&apos; etc.)
