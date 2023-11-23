@@ -143,3 +143,7 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 ## [0.5.5]
 
 - added character entities highlighting inside strings (&apos; etc.)
+
+## [0.5.6]
+
+- added missing self token for some languages that weren't highlighting yet (i.e. rust)

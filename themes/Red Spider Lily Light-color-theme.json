@@ -180,6 +180,7 @@
       "name": "This, self, null keywords",
       "scope": [
         "variable.language.this",
+        "variable.language.self",
         "variable.language.special.self",
         "constant.language.null"
       ],
