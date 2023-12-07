@@ -151,3 +151,7 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 ## [0.6.0]
 
 - added "Monoxylphide" test monochrome theme of my wet dreams
+
+## [0.6.1]
+
+- added html tags bolding which I forgot in previous version

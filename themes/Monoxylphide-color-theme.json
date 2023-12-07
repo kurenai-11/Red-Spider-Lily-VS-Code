@@ -402,7 +402,7 @@
       "scope": "entity.name.tag",
       "settings": {
         "foreground": "#242421",
-        "fontStyle": "italic"
+        "fontStyle": "italic bold"
       }
     },
     {
