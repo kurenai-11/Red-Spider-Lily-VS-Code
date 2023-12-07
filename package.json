@@ -1,8 +1,8 @@
 {
   "name": "red-spider-lily",
   "displayName": "Red Spider Lily",
-  "description": "A theme inspired by the red spider lily flower. It was made from scratch but it should be pretty stable.",
-  "version": "0.5.6",
+  "description": "A theme inspired by the red spider lily flower. It was made from scratch but it should be pretty stable. + (Alpha) derivative light theme \"Monoxylphide\" also by me.",
+  "version": "0.6.0",
   "repository": {
     "url": "https://github.com/kurenai-11/Red-Spider-Lily-VS-Code"
   },
@@ -30,6 +30,11 @@
         "label": "Red Spider Lily Light",
         "uiTheme": "vs",
         "path": "./themes/Red Spider Lily Light-color-theme.json"
+      },
+      {
+        "label": "Monoxylphide",
+        "uiTheme": "vs",
+        "path": "./themes/Monoxylphide-color-theme.json"
       }
     ]
   }

@@ -147,3 +147,7 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 ## [0.5.6]
 
 - added missing self token for some languages that weren't highlighting yet (i.e. rust)
+
+## [0.6.0]
+
+- added "Monoxylphide" test monochrome theme of my wet dreams
