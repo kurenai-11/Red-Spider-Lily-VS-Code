@@ -1,11 +1,16 @@
-# Red Spider Lily
+# Red Spider Lily VSCode
 
-## Preview
+## Red Spider Lily Dark:
 
-Dark:
 ![](/theme1.png)
-Light:
+
+## Red Spider Lily Light:
+
 ![](/theme2.png)
+
+## Monoxylphide:
+
+![](/theme3.png)
 
 ## About this theme
 
