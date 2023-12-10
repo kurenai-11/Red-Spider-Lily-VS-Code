@@ -40,6 +40,11 @@
         "label": "Umbraxyllide",
         "uiTheme": "vs-dark",
         "path": "./themes/Umbraxyllide-color-theme.json"
+      },
+      {
+        "label": "Monoxylphide test",
+        "uiTheme": "vs",
+        "path": "./themes-gen/Monoxylphide-test-color-theme.json"
       }
     ]
   }
