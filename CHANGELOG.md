@@ -159,3 +159,8 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 ## [0.6.2]
 
 - changed readme
+
+## [0.6.3]
+
+- added dark monochrome test theme as an alternative for "Monoxylphide", named "Umbraxyllide"
+- started developing parser and generator for the themes
