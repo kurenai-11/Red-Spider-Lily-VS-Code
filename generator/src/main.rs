@@ -6,7 +6,6 @@ use serde::Deserialize;
 struct EditorColors {
     theme_type: String,
     primary: String,
-    primary_darker: String,
     foreground_main: String,
     background_main: String,
 }
@@ -25,21 +24,26 @@ struct ColorsConfig {
     token_colors: TokenColors,
 }
 
-fn read_color_files(root_folder: &Path) -> Vec<ColorsConfig> {
+fn read_color_files(root_folder: &Path) -> Result<Vec<ColorsConfig>, Box<dyn std::error::Error>> {
     let configs_folder = root_folder.join("colors");
     let mut result = vec![];
-    for file in fs::read_dir(configs_folder).unwrap() {
-        let path = file.unwrap().path();
-        let contents = fs::read_to_string(path).unwrap();
-        result.push(toml::from_str(&contents).unwrap());
+    for file in fs::read_dir(configs_folder)? {
+        let path = file?.path();
+        let contents = fs::read_to_string(path)?;
+        result.push(toml::from_str(&contents)?);
     }
-    result
+    Ok(result)
 }
 
 fn main() {
-    let dir = std::env::current_dir().expect("should get working directory");
-    let project_root = dir.parent().expect("should get parent directory");
+    let dir = std::env::current_dir().expect("should be ableto get the working directory");
+    let project_root = dir
+        .parent()
+        .expect("should be able to get the parent directory");
     let themes_folder = project_root.join("themes-test");
     let color_theme_configs = read_color_files(project_root);
-    println!("{}", color_theme_configs[0].token_colors.function);
+    match color_theme_configs {
+        Ok(val) => println!("{}", val[0].token_colors.function),
+        Err(err) => println!("{err}"),
+    }
 }
