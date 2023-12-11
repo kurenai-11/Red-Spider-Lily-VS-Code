@@ -159,3 +159,7 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 ## [0.6.2]
 
 - changed readme
+
+## [0.6.3]
+
+- added bolding for entity.other.attribute-name
