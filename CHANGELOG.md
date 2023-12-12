@@ -163,3 +163,7 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 ## [0.6.3]
 
 - added bolding for entity.other.attribute-name
+
+## [0.6.4]
+
+- added "Umbraxyllide" alpha monochrome black color theme
