@@ -416,7 +416,8 @@
       "name": "Attribute name",
       "scope": "entity.other.attribute-name",
       "settings": {
-        "foreground": "#242421"
+        "foreground": "#242421",
+        "fontStyle": "bold"
       }
     }
   ]
