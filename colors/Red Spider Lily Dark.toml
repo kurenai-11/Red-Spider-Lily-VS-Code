@@ -1,0 +1,23 @@
+name = "Red Spider Lily Dark"
+
+[editor_colors]
+# type of the theme, light or dark
+theme_type = "dark"
+# primary color used
+primary = "#e11b32"
+# color for most of the foreground text
+foreground_main = "#f0f0d8"
+# color for most of the background
+background_main = "#181818"
+
+[token_colors]
+# for everything that invokes a function directly
+# includes class constructor etc. 
+# indirect getters without the (), I don't care
+function = "#d8c0a8"
+# mainly to signify that this is a "type" of some sort
+# used for classes, types, interfaces, but also for
+# css properties, units of measurements and escape sequences
+type_like = "#c0a8a8"
+# any type of strings, labels etc.
+strings = "#906060"
