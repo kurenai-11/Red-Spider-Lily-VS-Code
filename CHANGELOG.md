@@ -167,3 +167,7 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 ## [0.6.4]
 
 - added "Umbraxyllide" alpha monochrome black color theme
+
+## [0.6.5]
+
+- fixed quick input list focused item display on Umbraxyllide

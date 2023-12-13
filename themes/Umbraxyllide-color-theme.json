@@ -51,7 +51,7 @@
     "inputValidation.errorBorder": "#181818",
     "inputValidation.infoBackground": "#313131",
     "inputValidation.infoBorder": "#181818",
-    "quickInputList.focusBackground": "#181818",
+    "quickInputList.focusBackground": "#313131",
     "editorSuggestWidget.background": "#181818",
     "quickInput.background": "#181818",
     "peekViewEditor.background": "#181818",
