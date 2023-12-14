@@ -36,7 +36,7 @@ fn read_color_files(root_folder: &Path) -> Result<Vec<ColorsConfig>, Box<dyn std
 }
 
 fn main() {
-    let dir = std::env::current_dir().expect("should be ableto get the working directory");
+    let dir = std::env::current_dir().expect("should be able to get the working directory");
     let project_root = dir
         .parent()
         .expect("should be able to get the parent directory");
