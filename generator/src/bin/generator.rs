@@ -16,5 +16,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     let colors = Colors::try_from(&color_theme_configs[0].editor_colors)?;
 
+    UIColors::new(&colors);
+
     Ok(())
 }

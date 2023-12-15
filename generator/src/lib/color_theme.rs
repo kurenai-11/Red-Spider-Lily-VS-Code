@@ -1,6 +1,9 @@
 #![allow(non_snake_case)]
 
-use palette::{FromColor, Hsl, Hsla, IntoColor, ShiftHue, Srgb, Srgba};
+use palette::{
+    rgb::{Rgb, Rgba},
+    Hsl, Hsla, IntoColor,
+};
 use serde::Serialize;
 
 use crate::parsing::EditorColors;
@@ -281,7 +284,7 @@ trait ToHex {
     fn to_hex(self) -> String;
 }
 
-impl ToHex for Srgb {
+impl ToHex for Rgb {
     fn to_hex(self) -> String {
         let r = (self.red * 255.0) as u8;
         let g = (self.green * 255.0) as u8;
@@ -291,7 +294,7 @@ impl ToHex for Srgb {
     }
 }
 
-impl ToHex for Srgba {
+impl ToHex for Rgba {
     fn to_hex(self) -> String {
         let r = (self.red * 255.0) as u8;
         let g = (self.green * 255.0) as u8;
@@ -304,32 +307,32 @@ impl ToHex for Srgba {
 
 impl ToHex for Hsl {
     fn to_hex(self) -> String {
-        let srgb: Srgb = self.into_color();
+        let srgb: Rgb = self.into_color();
         srgb.to_hex()
     }
 }
 
 impl ToHex for Hsla {
     fn to_hex(self) -> String {
-        let srgba: Srgba = self.into_color();
+        let srgba: Rgba = self.into_color();
         srgba.to_hex()
     }
 }
 
 pub struct Colors {
     theme_type: String,
-    primary: Srgb,
-    foreground_main: Srgb,
-    background_main: Srgb,
+    primary: Rgb,
+    foreground_main: Rgb,
+    background_main: Rgb,
 }
 
-fn parse_color(color: &str) -> Result<Srgb, std::num::ParseIntError> {
+fn parse_color(color: &str) -> Result<Rgb, std::num::ParseIntError> {
     let c = color.trim_matches('#');
     let r = u8::from_str_radix(&c[0..2], 16)? as f32 / 255.0;
     let g = u8::from_str_radix(&c[2..4], 16)? as f32 / 255.0;
     let b = u8::from_str_radix(&c[4..6], 16)? as f32 / 255.0;
 
-    Ok(Srgb::new(r, g, b))
+    Ok(Rgb::new(r, g, b))
 }
 
 impl TryFrom<&EditorColors> for Colors {
@@ -375,8 +378,8 @@ impl UIColors {
 
         let mut foldBackground: Hsla = primary_hsl.into();
         foldBackground.alpha = 110.0 / 255.0;
-        foldBackground.saturation = 0.60;
-        foldBackground.lightness = 0.24;
+        foldBackground.saturation = 0.52;
+        foldBackground.lightness = 0.27;
 
         let mut editorLineNumber = primary_hsl;
         editorLineNumber.lightness = 0.38;
