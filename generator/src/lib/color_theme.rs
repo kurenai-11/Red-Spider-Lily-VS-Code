@@ -2,7 +2,8 @@
 
 use palette::{
     rgb::{Rgb, Rgba},
-    Hsl, Hsla, IntoColor,
+    Darken, DarkenAssign, Desaturate, DesaturateAssign, Hsl, Hsla, IntoColor, Lch, Lcha, Lighten,
+    Oklch, Oklcha, Saturate,
 };
 use serde::Serialize;
 
@@ -290,7 +291,7 @@ impl ToHex for Rgb {
         let g = (self.green * 255.0) as u8;
         let b = (self.blue * 255.0) as u8;
 
-        format!("{:02x}{:02x}{:02x}", r, g, b)
+        format!("#{:02x}{:02x}{:02x}", r, g, b)
     }
 }
 
@@ -301,21 +302,21 @@ impl ToHex for Rgba {
         let b = (self.blue * 255.0) as u8;
         let a = (self.alpha * 255.0) as u8;
 
-        format!("{:02x}{:02x}{:02x}{:02x}", r, g, b, a)
+        format!("#{:02x}{:02x}{:02x}{:02x}", r, g, b, a)
     }
 }
 
-impl ToHex for Hsl {
+impl ToHex for Lch {
     fn to_hex(self) -> String {
-        let srgb: Rgb = self.into_color();
-        srgb.to_hex()
+        let rgb: Rgb = self.into_color();
+        rgb.to_hex()
     }
 }
 
-impl ToHex for Hsla {
+impl ToHex for Lcha {
     fn to_hex(self) -> String {
-        let srgba: Rgba = self.into_color();
-        srgba.to_hex()
+        let rgba: Rgba = self.into_color();
+        rgba.to_hex()
     }
 }
 
@@ -356,40 +357,31 @@ impl TryFrom<&EditorColors> for Colors {
 impl UIColors {
     pub fn new(main_colors: &Colors) -> Self {
         // define some colors and their shades like primary, primary_2
-        let Colors {
-            theme_type,
-            primary,
-            foreground_main,
-            background_main,
-        } = main_colors;
+        let theme_type = &main_colors.theme_type;
         // define a color for each field
-        let primary_hsl: Hsl = primary.to_owned().into_color();
-        let foreground_main_hsl: Hsl = foreground_main.to_owned().into_color();
-        let background_main_hsl: Hsl = background_main.to_owned().into_color();
+        let primary: Lch = main_colors.primary.to_owned().into_color();
+        let foreground_main: Lch = main_colors.foreground_main.to_owned().into_color();
+        let background_main: Lch = main_colors.background_main.to_owned().into_color();
 
-        let mut primary_darker = primary_hsl;
-        primary_darker.lightness -= 0.1;
-        let mut background_lighter = background_main_hsl;
-        background_lighter += 0.15;
-
-        println!("primary_hsl: {:?}", primary_hsl);
+        let primary_darker = primary.darken(0.2);
+        let background_lighter = background_main.lighten(0.2);
 
         // just a bunch of magic numbers I like
 
-        let mut foldBackground: Hsla = primary_hsl.into();
+        let mut foldBackground: Lcha = primary.into();
         foldBackground.alpha = 110.0 / 255.0;
-        foldBackground.saturation = 0.52;
-        foldBackground.lightness = 0.27;
+        foldBackground.desaturate_assign(0.2);
+        foldBackground.darken_assign(0.2);
 
-        let mut editorLineNumber = primary_hsl;
-        editorLineNumber.lightness = 0.38;
+        let mut editorLineNumberActive = foreground_main;
+        editorLineNumberActive.darken_assign(0.2);
 
         UIColors {
             editor_background: background_main.to_hex(),
             editor_foreground: foreground_main.to_hex(),
             editor_foldBackground: foldBackground.to_hex(),
-            editorLineNumber_foreground: editorLineNumber.to_hex(),
-            editorLineNumber_activeForeground: primary.to_hex(),
+            editorLineNumber_foreground: foreground_main.to_hex(),
+            editorLineNumber_activeForeground: editorLineNumberActive.to_hex(),
             editorCursor_foreground: primary.to_hex(),
             editorLink_activeForeground: primary_darker.to_hex(),
             textLink_foreground: primary_darker.to_hex(),
@@ -419,4 +411,14 @@ pub struct VSCodeColorTheme {
     name: String,
     colors: UIColors,
     tokenColors: Vec<TokenColor>,
+}
+
+impl VSCodeColorTheme {
+    pub fn new(name: &str, colors: Colors) -> Self {
+        VSCodeColorTheme {
+            name: name.to_owned(),
+            colors: UIColors::new(&colors),
+            tokenColors: vec![],
+        }
+    }
 }

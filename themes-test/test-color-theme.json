@@ -1,0 +1,18 @@
+{
+  "name": "test1",
+  "colors": {
+    "editor.background": "#171717",
+    "editor.foreground": "#f0efd7",
+    "editor.foldBackground": "#b01e296e",
+    "editorLineNumber.foreground": "#f0efd7",
+    "editorLineNumber.activeForeground": "#bbbba4",
+    "editorCursor.foreground": "#e01b31",
+    "editorLink.activeForeground": "#c1001d",
+    "textLink.foreground": "#c1001d",
+    "textLink.activeForeground": "#e01b31",
+    "editorHoverWidget.background": "#171717",
+    "editorHoverWidget.foreground": "#f0efd7",
+    "editorHoverWidget.border": "#3e3e3e"
+  },
+  "tokenColors": []
+}

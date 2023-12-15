@@ -1,6 +1,10 @@
-use std::{fs, path::Path};
+use std::{
+    fs::{self, File},
+    io::Write,
+    path::Path,
+};
 use utils::{
-    color_theme::{Colors, UIColors},
+    color_theme::{Colors, UIColors, VSCodeColorTheme},
     parsing::{read_color_files, ColorsConfig},
 };
 
@@ -16,7 +20,10 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     let colors = Colors::try_from(&color_theme_configs[0].editor_colors)?;
 
-    UIColors::new(&colors);
+    let test_theme = VSCodeColorTheme::new("test1", colors);
+    let j = serde_json::to_string(&test_theme)?;
+    let mut file = File::create(themes_folder.join("test-color-theme.json"))?;
+    file.write_all(j.as_bytes())?;
 
     Ok(())
 }
