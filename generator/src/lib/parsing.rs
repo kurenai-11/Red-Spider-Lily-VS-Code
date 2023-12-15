@@ -4,24 +4,24 @@ use serde::Deserialize;
 
 #[derive(Deserialize)]
 pub struct EditorColors {
-    theme_type: String,
-    primary: String,
-    foreground_main: String,
-    background_main: String,
+    pub theme_type: String,
+    pub primary: String,
+    pub foreground_main: String,
+    pub background_main: String,
 }
 
 #[derive(Deserialize)]
 pub struct TokenColors {
-    function: String,
-    type_like: String,
-    strings: String,
+    pub function: String,
+    pub type_like: String,
+    pub strings: String,
 }
 
 #[derive(Deserialize)]
 pub struct ColorsConfig {
-    name: String,
-    editor_colors: EditorColors,
-    token_colors: TokenColors,
+    pub name: String,
+    pub editor_colors: EditorColors,
+    pub token_colors: TokenColors,
 }
 
 pub fn read_color_files(
