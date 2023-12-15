@@ -339,7 +339,6 @@ impl TryFrom<&EditorColors> for Colors {
     type Error = std::num::ParseIntError;
 
     fn try_from(ec: &EditorColors) -> Result<Self, Self::Error> {
-        let theme_type = ec.theme_type.clone();
         let primary = parse_color(&ec.primary)?;
         let foreground_main = parse_color(&ec.foreground_main)?;
         let background_main = parse_color(&ec.background_main)?;
