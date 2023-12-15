@@ -278,24 +278,11 @@ pub struct UIColors {
 }
 
 trait ToHex {
-    fn to_hex(&self) -> String;
-}
-trait IntoHex {
-    fn into_hex(self) -> String;
+    fn to_hex(self) -> String;
 }
 
 impl ToHex for Srgb {
-    fn to_hex(&self) -> String {
-        let r = (self.red * 255.0) as u8;
-        let g = (self.green * 255.0) as u8;
-        let b = (self.blue * 255.0) as u8;
-
-        format!("{:02x}{:02x}{:02x}", r, g, b)
-    }
-}
-
-impl IntoHex for Srgb {
-    fn into_hex(self) -> String {
+    fn to_hex(self) -> String {
         let r = (self.red * 255.0) as u8;
         let g = (self.green * 255.0) as u8;
         let b = (self.blue * 255.0) as u8;
@@ -305,7 +292,7 @@ impl IntoHex for Srgb {
 }
 
 impl ToHex for Srgba {
-    fn to_hex(&self) -> String {
+    fn to_hex(self) -> String {
         let r = (self.red * 255.0) as u8;
         let g = (self.green * 255.0) as u8;
         let b = (self.blue * 255.0) as u8;
@@ -315,28 +302,17 @@ impl ToHex for Srgba {
     }
 }
 
-impl IntoHex for Srgba {
-    fn into_hex(self) -> String {
-        let r = (self.red * 255.0) as u8;
-        let g = (self.green * 255.0) as u8;
-        let b = (self.blue * 255.0) as u8;
-        let a = (self.alpha * 255.0) as u8;
-
-        format!("{:02x}{:02x}{:02x}{:02x}", r, g, b, a)
-    }
-}
-
-impl IntoHex for Hsla {
-    fn into_hex(self) -> String {
-        let srgba: Srgba = self.into_color();
-        srgba.to_hex().to_owned()
-    }
-}
-
-impl IntoHex for Hsl {
-    fn into_hex(self) -> String {
+impl ToHex for Hsl {
+    fn to_hex(self) -> String {
         let srgb: Srgb = self.into_color();
-        srgb.to_hex().to_owned()
+        srgb.to_hex()
+    }
+}
+
+impl ToHex for Hsla {
+    fn to_hex(self) -> String {
+        let srgba: Srgba = self.into_color();
+        srgba.to_hex()
     }
 }
 
@@ -406,18 +382,18 @@ impl UIColors {
         editorLineNumber.lightness = 0.38;
 
         UIColors {
-            editor_background: background_main.into_hex(),
-            editor_foreground: foreground_main.into_hex(),
-            editor_foldBackground: foldBackground.into_hex(),
-            editorLineNumber_foreground: editorLineNumber.into_hex(),
-            editorLineNumber_activeForeground: primary.into_hex(),
-            editorCursor_foreground: primary.into_hex(),
-            editorLink_activeForeground: primary_darker.into_hex(),
-            textLink_foreground: primary_darker.into_hex(),
-            textLink_activeForeground: primary.into_hex(),
-            editorHoverWidget_background: background_main.into_hex(),
-            editorHoverWidget_foreground: foreground_main.into_hex(),
-            editorHoverWidget_border: background_lighter.into_hex(),
+            editor_background: background_main.to_hex(),
+            editor_foreground: foreground_main.to_hex(),
+            editor_foldBackground: foldBackground.to_hex(),
+            editorLineNumber_foreground: editorLineNumber.to_hex(),
+            editorLineNumber_activeForeground: primary.to_hex(),
+            editorCursor_foreground: primary.to_hex(),
+            editorLink_activeForeground: primary_darker.to_hex(),
+            textLink_foreground: primary_darker.to_hex(),
+            textLink_activeForeground: primary.to_hex(),
+            editorHoverWidget_background: background_main.to_hex(),
+            editorHoverWidget_foreground: foreground_main.to_hex(),
+            editorHoverWidget_border: background_lighter.to_hex(),
         }
     }
 }
