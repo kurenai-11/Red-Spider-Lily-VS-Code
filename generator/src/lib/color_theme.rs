@@ -321,7 +321,6 @@ impl ToHex for Lcha {
 }
 
 pub struct Colors {
-    theme_type: String,
     primary: Rgb,
     foreground_main: Rgb,
     background_main: Rgb,
@@ -346,7 +345,6 @@ impl TryFrom<&EditorColors> for Colors {
         let background_main = parse_color(&ec.background_main)?;
 
         Ok(Colors {
-            theme_type,
             primary,
             foreground_main,
             background_main,
@@ -356,9 +354,6 @@ impl TryFrom<&EditorColors> for Colors {
 
 impl UIColors {
     pub fn new(main_colors: &Colors) -> Self {
-        // define some colors and their shades like primary, primary_2
-        let theme_type = &main_colors.theme_type;
-        // define a color for each field
         let primary: Lch = main_colors.primary.to_owned().into_color();
         let foreground_main: Lch = main_colors.foreground_main.to_owned().into_color();
         let background_main: Lch = main_colors.background_main.to_owned().into_color();
@@ -371,17 +366,18 @@ impl UIColors {
         let mut foldBackground: Lcha = primary.into();
         foldBackground.alpha = 110.0 / 255.0;
         foldBackground.desaturate_assign(0.2);
-        foldBackground.darken_assign(0.2);
+        foldBackground.darken_assign(0.3);
 
-        let mut editorLineNumberActive = foreground_main;
-        editorLineNumberActive.darken_assign(0.2);
+        let mut editorLineNumber = foreground_main;
+        editorLineNumber.darken_assign(0.55);
+        editorLineNumber.desaturate_assign(0.35);
 
         UIColors {
             editor_background: background_main.to_hex(),
             editor_foreground: foreground_main.to_hex(),
             editor_foldBackground: foldBackground.to_hex(),
-            editorLineNumber_foreground: foreground_main.to_hex(),
-            editorLineNumber_activeForeground: editorLineNumberActive.to_hex(),
+            editorLineNumber_foreground: editorLineNumber.to_hex(),
+            editorLineNumber_activeForeground: foreground_main.to_hex(),
             editorCursor_foreground: primary.to_hex(),
             editorLink_activeForeground: primary_darker.to_hex(),
             textLink_foreground: primary_darker.to_hex(),

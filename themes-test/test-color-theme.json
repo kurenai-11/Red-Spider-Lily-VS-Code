@@ -3,9 +3,9 @@
   "colors": {
     "editor.background": "#171717",
     "editor.foreground": "#f0efd7",
-    "editor.foldBackground": "#b01e296e",
-    "editorLineNumber.foreground": "#f0efd7",
-    "editorLineNumber.activeForeground": "#bbbba4",
+    "editor.foldBackground": "#a1071f6e",
+    "editorLineNumber.foreground": "#646457",
+    "editorLineNumber.activeForeground": "#f0efd7",
     "editorCursor.foreground": "#e01b31",
     "editorLink.activeForeground": "#c1001d",
     "textLink.foreground": "#c1001d",
