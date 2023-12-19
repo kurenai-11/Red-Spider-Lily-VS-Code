@@ -171,3 +171,7 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 ## [0.6.5]
 
 - fixed quick input list focused item display on Umbraxyllide
+
+## [0.6.6]
+
+- fixed editor.selectionBackground when some selection was invisible in some places

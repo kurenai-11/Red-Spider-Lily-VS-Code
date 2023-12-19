@@ -99,7 +99,7 @@
     "checkbox.background": "#313131",
     "button.secondaryBackground": "#313131",
     // Word highlight section
-    "editor.selectionBackground": "#313131",
+    "editor.selectionBackground": "#484848",
     "editor.selectionHighlightBackground": "#4d4d4d7e",
     "editor.findMatchBackground": "#313131",
     "editor.findMatchHighlightBackground": "#74747486",
