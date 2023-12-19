@@ -385,7 +385,7 @@
       "scope": "keyword.operator",
       "settings": {
         "foreground": "#dddddd",
-        "fontStyle": "bold"
+        "fontStyle": "italic bold"
       }
     },
     {

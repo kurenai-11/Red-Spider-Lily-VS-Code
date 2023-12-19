@@ -384,7 +384,7 @@
       "scope": "keyword.operator",
       "settings": {
         "foreground": "#242421",
-        "fontStyle": "bold"
+        "fontStyle": "italic bold"
       }
     },
     {
