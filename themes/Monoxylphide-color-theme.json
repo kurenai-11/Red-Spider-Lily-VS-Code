@@ -388,6 +388,14 @@
       }
     },
     {
+      "name": "Logical operator",
+      "scope": "keyword.operator.logical",
+      "settings": {
+        "foreground": "#242421",
+        "fontStyle": "bold"
+      }
+    },
+    {
       "name": "Key-value separator",
       "scope": [
         "punctuation.separator.key-value",

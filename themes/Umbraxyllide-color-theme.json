@@ -389,6 +389,14 @@
       }
     },
     {
+      "name": "Logical operator",
+      "scope": "keyword.operator.logical",
+      "settings": {
+        "foreground": "#dddddd",
+        "fontStyle": "bold"
+      }
+    },
+    {
       "name": "Key-value separator",
       "scope": [
         "punctuation.separator.key-value",

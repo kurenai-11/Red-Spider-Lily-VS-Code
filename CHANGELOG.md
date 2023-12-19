@@ -179,3 +179,7 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 ## [0.6.7]
 
 - added italicization for operators (new, of etc.) (strange that I forgot that for all this time)
+
+## [0.6.8]
+
+- fixed logical operators being italicized (not intended)
