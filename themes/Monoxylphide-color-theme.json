@@ -384,15 +384,15 @@
       "scope": "keyword.operator",
       "settings": {
         "foreground": "#242421",
-        "fontStyle": "italic bold"
+        "fontStyle": "bold"
       }
     },
     {
-      "name": "Logical operator",
-      "scope": "keyword.operator.logical",
+      "name": "Keyword operator new, of",
+      "scope": ["keyword.operator.new", "keyword.operator.expression"],
       "settings": {
         "foreground": "#242421",
-        "fontStyle": "bold"
+        "fontStyle": "italic bold"
       }
     },
     {
