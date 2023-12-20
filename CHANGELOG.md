@@ -187,3 +187,7 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 ## [0.6.9]
 
 - fixed keywords from 2 previous updates once and for all
+
+## [0.7.0]
+
+- removed italics for class names

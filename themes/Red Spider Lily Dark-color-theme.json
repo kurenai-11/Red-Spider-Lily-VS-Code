@@ -249,7 +249,7 @@
       "scope": ["support.class", "entity.name.type.class"],
       "settings": {
         "foreground": "#c0a8a8",
-        "fontStyle": "italic"
+        "fontStyle": ""
       }
     },
     {

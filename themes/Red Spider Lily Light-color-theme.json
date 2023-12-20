@@ -251,7 +251,7 @@
       "scope": ["support.class", "entity.name.type.class"],
       "settings": {
         "foreground": "#4d4343",
-        "fontStyle": "italic"
+        "fontStyle": ""
       }
     },
     {
