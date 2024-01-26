@@ -191,3 +191,7 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 ## [0.7.0]
 
 - removed italics for class names
+
+## [0.7.1]
+
+- fixed selection in Umbraxyllide
