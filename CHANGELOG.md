@@ -195,3 +195,7 @@ All notable changes to the "red-spider-lily" extension will be documented in thi
 ## [0.7.1]
 
 - fixed selection in Umbraxyllide
+
+## [0.7.2]
+
+- fixed selection in Umbraxyllide again
