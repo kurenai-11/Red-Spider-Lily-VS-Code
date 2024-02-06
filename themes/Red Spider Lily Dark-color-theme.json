@@ -246,7 +246,7 @@
     },
     {
       "name": "Classes",
-      "scope": ["support.class", "entity.name.type.class"],
+      "scope": ["support.class", "entity.name.type.class", "entity.name.class"],
       "settings": {
         "foreground": "#c0a8a8",
         "fontStyle": ""
